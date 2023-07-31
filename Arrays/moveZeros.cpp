@@ -23,4 +23,4 @@ int main(){
     for (int num: nums){
         cout<<num<<endl;
     }
-}
+} 
