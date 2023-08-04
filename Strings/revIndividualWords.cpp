@@ -7,8 +7,8 @@ using namespace std;
 /*
 Program to reverse individual words of a string.
 Example-
-    Input:
-    Output:
+    Input: Hello World
+    Output: olleH dlroW 
 */
 
 int main(){
