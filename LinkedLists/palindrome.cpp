@@ -77,4 +77,4 @@ int main(){
     int arr[] = {1, 2, 2, 1};
     ListNode* list1 = createLinkedList(arr, 4);
     cout<<s.isPalindrome(list1);
-}
+} 
