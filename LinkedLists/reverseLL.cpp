@@ -16,6 +16,16 @@ void insert(int new_data){
 }
 
 class Solution {
+private:
+    ListNode* recursive(ListNode* curr, ListNode* prev){
+        if(curr==NULL)
+            return prev;
+        
+        ListNode* nex = curr->next;
+        curr->next = prev;
+
+        return recursive(nex, curr);
+    }
 public:
     ListNode* reverseList(ListNode* head) {
         
@@ -29,6 +39,7 @@ public:
             curr = next;
         }
         return prev;
+        // return recursive(curr, nullptr);
     }
         
 };
